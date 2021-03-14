@@ -1,0 +1,19 @@
+{
+  "name": "scraplink",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "chrome extension to copy link for scrapbox",
+  "default_locale": "ja_JP", 
+  "content_scripts": [{
+		"matches": ["<all_urls>"],
+    "js": [
+      "copy.js"
+    ]
+  }], 
+  "permissions": [
+    "tabs",
+    "background",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
